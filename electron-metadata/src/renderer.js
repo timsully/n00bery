@@ -9,7 +9,7 @@ const submitListener = document
         const files = [...document.getElementById('filePicker').files]
     
         // format the file data to only path and name
-        const filesFormatted = files.map({ name, path: pathName } => ({
+        const filesFormatted = files.map({ name, path: pathName }) => ({
             name,
             pathName
         }))
