@@ -1,0 +1,17 @@
+{
+  "name": "electron-metadata",
+  "version": "1.0.0",
+  "description": "File metadata viewer made in Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Tim Sullivan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.10"
+  }
+}
