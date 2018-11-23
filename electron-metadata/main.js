@@ -15,6 +15,9 @@ app.on('ready', () => {
     // path to our html
     const htmlPath = path.join('src', 'index.html')
 
+    // create a browser window
+    mainWindow = new BrowserWindow()
+
     // load the html file
     mainWindow.loadFile(htmlPath)
 })
