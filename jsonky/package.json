@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "testy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/timsully.git"
+  },
+  "keywords": [
+    "timsully"
+  ],
+  "author": "Tim Sullivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/timsully/issues"
+  },
+  "homepage": "https://github.com/github.com/timsully#readme"
+}
