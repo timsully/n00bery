@@ -2,21 +2,28 @@
 User makes a choice
 The computer makes a choice
 The winner is displayed
+
+Bonus:
+Add Lizard and Spock
 =end
-VALID_CHOICES = %w(rock paper scissors)
+VALID_CHOICES = %w(rock paper scissors lizard spock)
 
 def prompt(message)
   Kernel.puts("=> #{message}")
 end
 
 def display_results(player, computer)
-  if (player == 'rock' && computer =='scissors') ||
-      (player == 'paper' && computer == 'rock') ||
-      (player == 'scissors' && computer == 'paper')
+  if (player == 'rock' && computer == 'scissors' || computer == 'lizard') ||
+      (player == 'paper' && computer == 'rock' || computer == 'spock') ||
+      (player == 'scissors' && computer == 'paper' || computer == 'lizard') ||
+      (player == 'lizard' && computer == 'paper' || computer == 'spock') ||
+      (player == 'spock' && computer == 'scissors' || computer == 'rock')
     prompt("You won!")
-  elsif (computer == 'rock' && player =='scissors') ||
-        (computer == 'paper' && player == 'rock') ||
-        (computer == 'scissors' && player == 'paper')
+  elsif (computer == 'rock' && player == 'scissors' || player == 'lizard') ||
+        (computer == 'paper' && player == 'rock' || player == 'spock') ||
+        (computer == 'scissors' && player == 'paper' || player == 'lizard') ||
+        (computer == 'lizard' && player == 'paper' || player == 'spock') ||
+        (computer == 'spock' && player == 'scissors' || player == 'rock')
     prompt("Computer won!")
   else
     prompt("It's a tie!")
