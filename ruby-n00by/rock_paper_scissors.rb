@@ -13,17 +13,17 @@ def prompt(message)
 end
 
 def display_results(player, computer)
-  if (player == 'rock' && computer == 'scissors' || computer == 'lizard') ||
-      (player == 'paper' && computer == 'rock' || computer == 'spock') ||
-      (player == 'scissors' && computer == 'paper' || computer == 'lizard') ||
-      (player == 'lizard' && computer == 'paper' || computer == 'spock') ||
-      (player == 'spock' && computer == 'scissors' || computer == 'rock')
+  if (player == 'rock') && (computer == 'scissors') || (computer == 'lizard') ||
+      (player == 'paper') && (computer == 'rock') || (computer == 'spock') ||
+      (player == 'scissors') && (computer == 'paper') || (computer == 'lizard') ||
+      (player == 'lizard') && (computer == 'paper') || (computer == 'spock') ||
+      (player == 'spock') && (computer == 'scissors') || (computer == 'rock')
     prompt("You won!")
-  elsif (computer == 'rock' && player == 'scissors' || player == 'lizard') ||
-        (computer == 'paper' && player == 'rock' || player == 'spock') ||
-        (computer == 'scissors' && player == 'paper' || player == 'lizard') ||
-        (computer == 'lizard' && player == 'paper' || player == 'spock') ||
-        (computer == 'spock' && player == 'scissors' || player == 'rock')
+  elsif (computer == 'rock') && (player == 'scissors') || (player == 'lizard') ||
+        (computer == 'paper') && (player == 'rock') || (player == 'spock') ||
+        (computer == 'scissors') && (player == 'paper') || (player == 'lizard') ||
+        (computer == 'lizard') && (player == 'paper') || (player == 'spock') ||
+        (computer == 'spock') && (player == 'scissors') || (player == 'rock')
     prompt("Computer won!")
   else
     prompt("It's a tie!")
