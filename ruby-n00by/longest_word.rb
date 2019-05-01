@@ -13,15 +13,20 @@ Iterate through the words one by one.
 After iterating through the sentence, return the saved value.
 =end
 def longest_word(sentence)
+  # divide string into array of substrings
   words = sentence.split
-  saved_word = words[0]
+  # removes element and returns it, which will assign value to saved_word
+  saved_word = words.shift
 
+  # iterate through array
   words.each do |word|
-    if word.length > saved_word.length
+    # if word is greater than or equal to saved word assign value
+    # to saved_word
+    if word.length >= saved_word.length
       saved_word = word
     end
   end
-
+  # one iteration is complete, return the longest word in sentence
   saved_word
 end
 
